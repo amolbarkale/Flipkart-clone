@@ -1,2 +1,1 @@
-flipkart project
-This is our project
+flipkart project.

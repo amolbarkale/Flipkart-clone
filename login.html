@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <style>
+    #parent {
+      width: 50%;
+      height: 450px;
+      /* border: 2px solid black; */
+      margin: auto;
+      margin-top: 50px;
+      display: flex;
+      border-radius: 5px;
+    }
+    .box1 {
+      width: 35%;
+      height: 450px;
+      /* border: 2px solid yellowgreen; */
+      background-color: rgb(40, 116, 240);
+    }
+    .box2 {
+      width: 65%;
+      height: 450px;
+      border: 2px solid whitesmoke;
+      background-color: rgb(255, 255, 255);
+    }
+    .box1 > h1 {
+      color: rgb(255, 255, 255);
+      font-family: Roboto, Arial, sans-serif;
+      margin-left: 20px;
+    }
+    .box1 p {
+      color: rgb(219, 219, 223);
+      font-family: Roboto, Arial, sans-serif;
+      margin-left: 20px;
+    }
+    .image {
+      margin-top: 100px;
+    }
+    #inputcontrol {
+      padding: 8px 10px 10px 0;
+      width: 80%;
+      color: #000;
+      font-size: inherit;
+      background: #fff;
+      border: none;
+      border-bottom: 1px solid blue;
+      margin-left: 40px;
+    }
+    #inputcontrol1 {
+      padding: 8px 10px 10px 0;
+      width: 80%;
+      color: #000;
+      font-size: inherit;
+      background: #fff;
+      border: none;
+      border-bottom: 1px solid blue;
+      margin-left: 40px;
+    }
+    .font {
+      color: gray;
+      margin-left: 40px;
+      margin-top: 20px;
+    }
+
+    .font1 {
+      color: gray;
+      margin-left: 40px;
+    }
+    .terms {
+      margin-top: 20px;
+      font-size: 14px;
+      margin-left: 30px;
+    }
+    .blue {
+      color: blue;
+    }
+    .grey {
+      color: gray;
+    }
+    .loginButton {
+      height: 50px;
+      width: 80%;
+      background-color: rgb(251, 100, 27);
+      color: white;
+      margin-top: 15px;
+      margin-left: 30px;
+      border: hidden;
+      border-radius: 5px;
+    }
+
+    .otp {
+      height: 50px;
+      width: 80%;
+      background-color: whitesmoke;
+      color: blue;
+      margin-top: 15px;
+      margin-left: 30px;
+      border: 1px solid rgb(226, 226, 226);
+      border-radius: 5px;
+    }
+    .or {
+      color: gray;
+      font-size: large;
+      margin-top: 10px;
+      margin-left: 180px;
+    }
+    .end {
+      margin-top: 30px;
+      margin-left: 80px;
+    }
+    .a {
+      text-decoration: none;
+      color: blue;
+      height: 40px;
+      border: hidden;
+      background-color: white;
+    }
+  </style>
+  <body>
+    <div id="parent">
+      <div class="box1">
+        <h1>Login</h1>
+        <div>
+          <p>Get access to your</p>
+          <p>Orders, Wishlist and</p>
+          <p>Recommendations</p>
+        </div>
+
+        <div>
+          <img
+            class="image"
+            src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png"
+          />
+        </div>
+      </div>
+
+      <div class="box2">
+        <form id="loginform">
+          <div class="font">Enter Email/Mobile Number</div>
+          <div>
+            <input autocomplete="off" type="text" id="inputcontrol" />
+          </div>
+
+          <div class="font" 1>Enter Password</div>
+          <div>
+            <input autocomplete="off" type="password" id="inputcontrol1" />
+          </div>
+        </form>
+
+        <div class="terms">
+          <span class="grey">By continuing, you agree to Flipkart's</span
+          ><span class="blue">Terms of Use</span><span class="grey"> and</span
+          ><span class="blue"> Privacy</span>
+          <div class="blue">Policy.</div>
+        </div>
+
+        <div>
+          <button onclick="login()" class="loginButton">Login</button>
+        </div>
+        <div class="or">OR</div>
+
+        <div>
+          <button class="otp">Request OTP</button>
+        </div>
+        <div class="end">
+          <button onclick="window.location.href='signup.html'" class="a">
+            New to Flipkart? Create an account
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function login() {
+    let form = document.getElementById("loginform");
+    let email = form.inputcontrol.value;
+    let password = form.inputcontrol1.value;
+
+    let userdata = JSON.parse(localStorage.getItem("data"));
+
+    for (let i = 0; i < userdata.length; i++) {
+      var bool = false;
+      let u = userdata[i].email;
+      let p = userdata[i].password;
+      if (email === u && password === p) {
+        bool = true;
+        window.location.href = "indexok.html";
+        alert("login successful");
+        break;
+      }
+    }
+    if (bool == false) {
+      alert("Invalid Credentials");
+    }
+  }
+</script>

@@ -1,29 +1,35 @@
-# Faasos Home page
+flipkart project.
+# Flipkart Home page
+![Screenshot (607)](https://user-images.githubusercontent.com/82999632/129438221-c78979de-860e-4855-b445-40c87f5ae5bf.png)
+# Cart page
+![Screenshot (608)](https://user-images.githubusercontent.com/82999632/129438226-b327762d-1c20-4441-9f87-2c85c8f34e19.png)
 
-![Screenshot (269)](https://user-images.githubusercontent.com/28835550/122637287-65575600-d10b-11eb-9797-8ab2e8133215.png)
 
-# Index page
 
-![Screenshot (270)](https://user-images.githubusercontent.com/28835550/122637317-933c9a80-d10b-11eb-8a38-c3a25ca1b017.png)
+
+
 
 # Description
 
-In this project we made functional clone of Faasos.com which is one of the leading Quick Service Restaurants, having presence of more than 35 cities in India.
+Flipkart is a leading e-commerce website in India, and in this project we made functional clone of Flipkart.com with optimized code along with HTML-CSS. we have added user interactions like sign up and log in pages and our project is easier to understand beacuse of same as original website and use of more functions in Javascript code. Due to time limit we have completed our project in one week but in future we are looking forward to add more functionalities to make it more accessible and user friendly.
+
 
 ## Authors
 
-- [@Hemanth-kona](https://github.com/hmntk)
 - [@Amol-barkale](https://github.com/amolbarkale)
+- [@Vishnu VR](https://github.com/vvronline)
+- [@Prakash Chandra](https://github.com/Prakashchandra041)
+- [@Gajula Sunil Kumar](https://github.com/gsunil1996)
 
 ## Contributing
 
 Contributions are always welcome!
 You can Contribute with us to make this more functionable.
 
+
 ## Features
 
-- Same as original Website
-- Responsive
+-  Same as original Website
 - Fullscreen mode
 - Cross platform
 - All Data are stored in local data storege
@@ -32,28 +38,25 @@ You can Contribute with us to make this more functionable.
 
 **Frontend:** HTML, CSS, Javascript.
 
+
 ## Tech and Tools we have used
 
-**For font & icons**: Googleapis and fontawesome
+**For font & icons**: fontawesome.
 
-**font used**: Roboto, Trebuchet MS
+**font used**: Roboto, Arial, Verdana.
+
 
 ## Leeson learned
-
 We are a learner and this is our first clone so faced many issues to build this site. These are some topic that challenges us to make this:-
 
 - functionality of webpages
 - Git
-- Payment process
 - Javascript code optimazation
--
-
+- 
 ## Support
-
-For support, email amol_nj2_051@masai.school, hemanth_nj2_077@masai.school or join our Slack channel.
+For support, email amol_nj2_051@masai.school, sunil_nj2_085@masai.school or join us on linkedIn - [@Amol-barkale](https://www.linkedin.com/in/amol-barkale-985834204/),- [@Prakash Chandra](https://www.linkedin.com/in/prakash-chandra-7aab29129/), -[@Vishnu VR](https://github.com/vvronlinehttps://www.linkedin.com/in/vishnu-vr-58a356a0/) and -[@Gajula Sunil Kumar](https://www.linkedin.com/in/sunil-kumar-gajula-438048203/).
 
 ## External libraries
 
-- Google fonts
-- Awesome fonts
-- Feathericons
+- Google fonts.
+- Awesome fonts.

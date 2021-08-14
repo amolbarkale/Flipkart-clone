@@ -1,0 +1,106 @@
+#parent {
+  width: 50%;
+  height: 450px;
+  /* border: 2px solid black; */
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  border-radius: 5px;
+}
+.box1 {
+  width: 37%;
+  height: 450px;
+  /* border: 2px solid yellowgreen; */
+  background-color: rgb(40, 116, 240);
+}
+.box2 {
+  width: 63%;
+  height: 450px;
+  border: 2px solid whitesmoke;
+  background-color: rgb(255, 255, 255);
+}
+.box1 > h2 {
+  color: rgb(255, 255, 255);
+  font-family: Roboto, Arial, sans-serif;
+  margin-left: 20px;
+}
+.box1 p {
+  color: rgb(219, 219, 223);
+  font-family: Roboto, Arial, sans-serif;
+  margin-left: 20px;
+}
+.image {
+  margin-top: 60px;
+}
+#inputcontrol {
+  padding: 8px 10px 10px 0;
+  width: 80%;
+  color: #000;
+  font-size: inherit;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid blue;
+  margin-left: 40px;
+}
+#inputcontrol1 {
+  padding: 8px 10px 10px 0;
+  width: 80%;
+  color: #000;
+  font-size: inherit;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid blue;
+  margin-left: 40px;
+}
+#inputcontrol2 {
+  padding: 8px 10px 10px 0;
+  width: 80%;
+  color: #000;
+  font-size: inherit;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid blue;
+  margin-left: 40px;
+}
+.font {
+  color: gray;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.terms {
+  margin-top: 40px;
+  font-size: 14px;
+  margin-left: 30px;
+}
+.blue {
+  color: blue;
+}
+.grey {
+  color: gray;
+}
+.continue {
+  height: 50px;
+  width: 80%;
+  background-color: rgb(251, 100, 27);
+  color: white;
+  margin-top: 15px;
+  margin-left: 30px;
+  border: hidden;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.existing {
+  height: 50px;
+  width: 80%;
+  background-color: whitesmoke;
+  color: blue;
+  margin-top: 15px;
+  margin-left: 30px;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: 15px;
+}

@@ -1,0 +1,214 @@
+.container {
+  display: grid;
+  margin: 40px;
+  padding: auto;
+  height: 100vh;
+  width: 60%;
+  grid-template-columns: 4fr;
+  grid-template-rows: 0.5fr 4fr 4fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "login  "
+    "ad "
+    "payment "
+    "footer ";
+}
+.login {
+  grid-area: login;
+  box-shadow: 0px 0px 5px 0.1px rgb(226, 224, 224);
+  border-bottom: 1px solid #dddcdc;
+
+  padding: 10px;
+}
+
+.log {
+  color: #878787;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.tik {
+  vertical-align: top;
+  height: 20px;
+  margin-left: 8px;
+}
+.ad {
+  grid-area: ad;
+  box-shadow: 0px 0px 5px 0.1px rgb(226, 224, 224);
+  border-bottom: 1px solid #dddcdc;
+}
+.delivery {
+  background-color: #2874f0;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 24px;
+  border-radius: 2px 2px 0 0;
+}
+
+/*address form*/
+
+.main {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1 fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "name mob"
+    "pin house"
+    "city state"
+    "landmark altnum"
+    "submit submit";
+  justify-content: center;
+  padding: 20px;
+
+  width: 50%;
+}
+* {
+  justify-content: center;
+}
+
+.main > input[type="text"]:focus {
+  outline: 2px solid #00a2ff;
+}
+.main input {
+  height: 40px;
+  width: 200px;
+}
+.name,
+.mobile,
+.pin,
+.house-name,
+.city,
+.state,
+.submitt {
+  border: 1px solid rgb(226, 225, 225);
+  height: 30px;
+  width: 200px;
+}
+
+.name {
+  grid-area: name;
+}
+.mobile {
+  grid-area: mob;
+}
+.pin {
+  grid-area: pin;
+}
+.house-name {
+  grid-area: house;
+}
+.city {
+  grid-area: city;
+}
+.state {
+  grid-area: state;
+}
+
+.submitt {
+  background: #fb641b;
+  display: block;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+  color: #fff;
+  height: 40px !important;
+  width: 100px;
+  margin: 10px 0 10px 25px;
+  border-radius: 3px;
+}
+
+.submitt:hover {
+  background-color: #45a049;
+}
+
+/*payment*/
+
+.payment {
+  grid-area: payment;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 0 -16px;
+}
+
+.col {
+  padding: 0 16px;
+  flex: 50%;
+}
+
+.payment {
+  padding: 5px 20px 15px 20px;
+  border-radius: 3px;
+  display: none;
+  margin: 40px 40px 0 40px;
+  padding: auto;
+  width: 80%;
+  box-shadow: inset 0px 0px 5px 0.1px rgb(226, 226, 226);
+  border-bottom: 1px solid #d3d0d0;
+}
+
+.payment input[type="text"] {
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.payment input[type="text"]:focus {
+  outline: 1px solid #0099ff;
+}
+
+.payment label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+#btn {
+  background-color: #fb641b;
+  color: white;
+  padding: 5px 17px !important;
+  font-size: 14px !important;
+  border: none;
+  width: 24%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  box-shadow: 0 1px 2px 2px rgb(0 0 0 / 20%);
+  width: 150px;
+  margin: 10px 0 10px 25px;
+  border-radius: 3px;
+}
+
+#btn:hover {
+  background-color: #45a049;
+}
+
+/*footer*/
+
+.footer {
+  grid-area: footer;
+  display: flex;
+}
+.ftext {
+  margin-left: 300px;
+}
+.ftext a {
+  color: #2874f0;
+  text-decoration: none;
+}

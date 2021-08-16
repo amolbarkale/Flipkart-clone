@@ -648,4 +648,17 @@ let cartitems = localStorage.getItem("productsInCart")
 
 }
 
-displaycart()
+displaycart();
+
+  function showcart() {
+    window.location.href = "cart.html";
+  }
+
+  let empty = document.getElementsByClassName("fa-shopping-cart")[0];
+  let red = document.getElementById("redd");
+
+  empty.addEventListener("click", function () {
+    if ((red.style.display = "none")) {
+      window.location.href = "/empty_cart.html";
+    }
+  });

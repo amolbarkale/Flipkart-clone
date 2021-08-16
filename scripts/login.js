@@ -22,3 +22,25 @@ function login() {
         alert('Invalid Credentials');
     }
 }
+ function login() {
+    let form = document.getElementById("loginform");
+    let email = form.inputcontrol.value;
+    let password = form.inputcontrol1.value;
+
+    let userdata = JSON.parse(localStorage.getItem("data"));
+
+    for (let i = 0; i < userdata.length; i++) {
+      var bool = false;
+      let u = userdata[i].email;
+      let p = userdata[i].password;
+      if (email === u && password === p) {
+        bool = true;
+        window.location.href = "index.html";
+        alert("login successful");
+        break;
+      }
+    }
+    if (bool == false) {
+      alert("Invalid Credentials");
+    }
+  }

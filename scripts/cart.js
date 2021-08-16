@@ -411,7 +411,8 @@ amol.addEventListener("onclick", displaycart());
     cartnos()
   }
 
-
-  
+function goindex() {
+    window.location.href = "index.html";
+  }
 
 

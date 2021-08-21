@@ -1,3 +1,23 @@
+ const popup = document.querySelector(".offer_popup");
+  const popup1 = document.querySelector(".offer_popup1");
+  const loginn = document.querySelector("#loginn");
+  const finishh = document.querySelector("#finishh");
+
+  window.onload = function () {
+    setTimeout(function () {
+      popup.style.display = "block";
+    }, 1000);
+  };
+
+  loginn.addEventListener("click", () => {
+    popup.style.display = "none";
+    popup1.style.display = "block";
+  });
+  finishh.addEventListener("click", () => {
+    popup1.style.display = "none";
+  });
+
+
 function login() {
     let form = document.getElementById("loginform")
     let email = form.inputcontrol.value;
@@ -35,7 +55,6 @@ function login() {
       let p = userdata[i].password;
       if (email === u && password === p) {
         bool = true;
-        window.location.href = "index.html";
         alert("login successful");
         break;
       }

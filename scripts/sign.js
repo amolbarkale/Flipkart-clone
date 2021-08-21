@@ -19,7 +19,6 @@ function signup() {
         }
             arr.push(data);
         localStorage.setItem('data', JSON.stringify(arr));
-        window.location.href = 'login.html';
     } else {
         alert('Fill all mandatory details');
     }

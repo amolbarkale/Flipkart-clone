@@ -1,13 +1,14 @@
- const popup = document.querySelector(".offer_popup");
+const popup = document.querySelector(".offer_popup");
   const popup1 = document.querySelector(".offer_popup1");
   const loginn = document.querySelector("#loginn");
   const finishh = document.querySelector("#finishh");
+const show =  document.querySelector("#show");
 
-  window.onload = function () {
-    setTimeout(function () {
-      popup.style.display = "block";
-    }, 1000);
-  };
+   
+     
+  show.addEventListener("click", () => {
+   popup.style.display = "block";
+  });
 
   loginn.addEventListener("click", () => {
     popup.style.display = "none";

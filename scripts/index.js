@@ -1,18 +1,3 @@
- //dropdown
-  var show = document.getElementById("show");
-  var blok = document.getElementById("block");
-
-  show.onmouseover = function () {
-    blok.style.display = "block";
-  };
-
-  blok.onmouseover = function () {
-    blok.style.display = "block";
-  };
-
-  blok.onmouseout = function () {
-    blok.style.display = "none";
-  };
 
   // slidebar
   let arr = [

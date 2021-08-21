@@ -635,7 +635,9 @@ let cartitems = localStorage.getItem("productsInCart")
 
 displaycart();
 
-  function showcart() {
+function showcart() {
+  console.log('showcart');
+    
     window.location.href = "cart.html";
   }
 
@@ -644,6 +646,7 @@ displaycart();
 
   empty.addEventListener("click", function () {
     if ((red.style.display = "none")) {
-      window.location.href = "/empty_cart.html";
+      console.log('red:', red)
+      window.location.href = "empty_cart.html";
     }
   });

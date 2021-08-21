@@ -1,10 +1,9 @@
-const popup = document.querySelector(".offer_popup");
-  const popup1 = document.querySelector(".offer_popup1");
-  const loginn = document.querySelector("#loginn");
-  const finishh = document.querySelector("#finishh");
-const show =  document.querySelector("#show");
+var popup = document.querySelector(".offer_popup");
+var popup1 = document.querySelector(".offer_popup1");
+var loginn = document.querySelector("#loginn");
+ var finishh = document.querySelector("#finishh");
+var show =  document.querySelector("#show");
 
-   
      
   show.addEventListener("click", () => {
    popup.style.display = "block";
@@ -14,9 +13,8 @@ const show =  document.querySelector("#show");
     popup.style.display = "none";
     popup1.style.display = "block";
   });
-  finishh.addEventListener("click", () => {
-    popup1.style.display = "none";
-  });
+  
+        
 
 
 function login() {
@@ -30,12 +28,11 @@ function login() {
         var bool = false;
         let u = userdata[i].email;
         let p = userdata[i].password;
-        // console.log(u);
-        // console.log(p);
-        if (email === u && password === p) {
-            bool = true;
-            window.location.href = 'index.html';
-            alert('login successful')
+   
+      if (email === u && password === p) {
+        bool = true;
+        alert('login successful');
+        popup1.style.display = "none";
             break;
         }
     }
@@ -43,24 +40,3 @@ function login() {
         alert('Invalid Credentials');
     }
 }
- function login() {
-    let form = document.getElementById("loginform");
-    let email = form.inputcontrol.value;
-    let password = form.inputcontrol1.value;
-
-    let userdata = JSON.parse(localStorage.getItem("data"));
-
-    for (let i = 0; i < userdata.length; i++) {
-      var bool = false;
-      let u = userdata[i].email;
-      let p = userdata[i].password;
-      if (email === u && password === p) {
-        bool = true;
-        alert("login successful");
-        break;
-      }
-    }
-    if (bool == false) {
-      alert("Invalid Credentials");
-    }
-  }

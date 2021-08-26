@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  margin: 40px;
+  margin: 20px 40px 10px 40px;
   padding: auto;
   height: 100vh;
   width: 60%;
@@ -13,12 +13,19 @@
     "payment "
     "footer ";
 }
-.login {
+.login,
+.login2,
+.login3 {
   grid-area: login;
-  box-shadow: 0px 0px 5px 0.1px rgb(226, 224, 224);
+  box-shadow: 0px 0px 5px 3px rgb(226, 224, 224);
   border-bottom: 1px solid #dddcdc;
-
+  background-color: white;
+  margin-bottom: 20px;
   padding: 10px;
+  height: 50px;
+}
+.login2 {
+  display: none;
 }
 
 .log {
@@ -35,8 +42,10 @@
 }
 .ad {
   grid-area: ad;
-  box-shadow: 0px 0px 5px 0.1px rgb(226, 224, 224);
+  box-shadow: 0px 0px 5px 4px rgb(226, 224, 224);
   border-bottom: 1px solid #dddcdc;
+  background-color: white;
+  margin-bottom: 20px;
 }
 .delivery {
   background-color: #2874f0;
@@ -45,6 +54,7 @@
   font-weight: 500;
   padding: 14px 24px;
   border-radius: 2px 2px 0 0;
+  height: 50px;
 }
 
 /*address form*/
@@ -64,7 +74,7 @@
   justify-content: center;
   padding: 20px;
 
-  width: 50%;
+  width: 60%;
 }
 * {
   justify-content: center;
@@ -75,7 +85,10 @@
 }
 .main input {
   height: 40px;
-  width: 200px;
+  width: 300px;
+}
+input::placeholder {
+  padding-left: 10px;
 }
 .name,
 .mobile,
@@ -113,9 +126,12 @@
   display: block;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
   color: #fff;
-  height: 40px !important;
-  width: 100px;
+  height: 45px !important;
+  width: 145px;
+  box-sizing: border-box;
+  padding: 0 15px;
   margin: 10px 0 10px 25px;
+  font-size: 13px;
   border-radius: 3px;
 }
 
@@ -125,14 +141,11 @@
 
 /*payment*/
 
-.payment {
-  grid-area: payment;
-}
-
 body {
   font-family: sans-serif;
   font-size: 17px;
   padding: 8px;
+  background-color: rgb(235, 235, 235);
 }
 
 * {
@@ -146,17 +159,6 @@ body {
 .col {
   padding: 0 16px;
   flex: 50%;
-}
-
-.payment {
-  padding: 5px 20px 15px 20px;
-  border-radius: 3px;
-  display: none;
-  margin: 40px 40px 0 40px;
-  padding: auto;
-  width: 80%;
-  box-shadow: inset 0px 0px 5px 0.1px rgb(226, 226, 226);
-  border-bottom: 1px solid #d3d0d0;
 }
 
 .payment input[type="text"] {
@@ -182,7 +184,7 @@ body {
 #btn {
   background-color: #fb641b;
   color: white;
-  padding: 5px 17px !important;
+  padding: 5px 37px !important;
   font-size: 14px !important;
   border: none;
   width: 24%;
@@ -192,6 +194,22 @@ body {
   box-shadow: 0 1px 2px 2px rgb(0 0 0 / 20%);
   width: 150px;
   margin: 10px 0 10px 25px;
+  border-radius: 3px;
+}
+#btn1 {
+  background-color: #f19a6f;
+  box-sizing: border-box;
+  color: white;
+  padding: 15px 15px !important;
+  font-size: 12px !important;
+  border: none;
+  width: 24%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  box-shadow: 0 1px 2px 2px rgb(0 0 0 / 20%);
+  width: 150px;
+  margin: 10px 0 10px 20px;
   border-radius: 3px;
 }
 
@@ -211,4 +229,95 @@ body {
 .ftext a {
   color: #2874f0;
   text-decoration: none;
+}
+#rowLayout {
+  display: flex;
+  flex-direction: row;
+  width: 150%;
+}
+.A {
+  width: 70%;
+}
+.B {
+  width: 24%;
+  margin: 0 2%;
+  box-shadow: 0px 0px 5px 4px rgb(226, 224, 224) !important;
+  background-color: white;
+  height: 350px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.payment {
+  padding: 5px 20px 15px 20px;
+  border-radius: 3px;
+  display: none;
+  margin: 20px 40px 0 0px;
+  padding: auto;
+  width: 100%;
+  box-shadow: inset 0px 0px 5px 0.1px rgb(226, 226, 226);
+  border-bottom: 1px solid #d3d0d0;
+  grid-area: payment;
+  box-shadow: 0px 0px 5px 4px rgb(226, 224, 224) !important;
+  background-color: white !important;
+}
+.paymentt {
+  padding: 5px 20px 15px 20px;
+  border-radius: 3px;
+  display: block;
+  margin: 40px 0 0 0px;
+  width: 96%;
+  height: 50px;
+  box-shadow: 0px 0px 5px 4px rgb(226, 224, 224) !important;
+  border-bottom: 1px solid #d3d0d0;
+  box-sizing: content-box;
+  background-color: white;
+
+  color: #575454;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.bill {
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 1.3cm;
+}
+.text {
+  color: gray;
+  margin-left: -20px;
+  font-size: 14px;
+}
+.sticker {
+  width: 350px;
+  height: 90px;
+  margin: 0px -20px;
+  margin-bottom: 20px;
+}
+.apply {
+  background-color: #fb641b;
+  color: white;
+  border: none;
+  box-sizing: border-box;
+  padding: 7px 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.input {
+  height: 30px;
+  width: 70%;
+}
+.details > p {
+  color: black !important;
+}
+.details > p:nth-child(1),
+.details > p:nth-child(2) {
+  font-size: 16px;
+  line-height: 0.5cm;
+  margin: 10px 0;
+  color: gray !important;
+}
+.details > p > span {
+  color: green;
 }

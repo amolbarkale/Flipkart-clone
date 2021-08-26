@@ -141,7 +141,7 @@
 .image {
   margin-top: 100px;
 }
-#inputcontrol {
+#inputcontroll {
   padding: 8px 10px 10px 0;
   width: 80%;
   color: #000;
@@ -151,7 +151,7 @@
   border-bottom: 1px solid blue;
   margin-left: 40px;
 }
-#inputcontrol1 {
+#inputcontroll1 {
   padding: 8px 10px 10px 0;
   width: 80%;
   color: #000;
@@ -246,7 +246,7 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  padding: 0 50px;
+  padding: 0;
 }
 
 img {
@@ -271,11 +271,61 @@ header {
   box-sizing: border-box;
   padding-bottom: 5px;
 }
+.headind {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #2874f0;
+  width: 10%;
+  height: 56px;
+  position: sticky;
+  z-index: 2;
+  top: 0px;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+}
 .navbar-left {
   width: 20%;
   text-align: right;
   margin: 5px 0px;
   cursor: pointer;
+}
+.navbar-leftt {
+  width: 10%;
+  text-align: left;
+  margin: 5px 1270px 5px 0 !important;
+  cursor: pointer;
+}
+.navbar-leftt a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+.check a {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.check span {
+  color: yellow;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.check:hover {
+  text-decoration: underline;
+  color: white;
+}
+.check p {
+  display: flex;
+  flex-direction: row-reverse !important;
+  margin-right: 60px;
+}
+
+.logoo {
+  width: 75px;
+  height: 20px;
+  margin: 5px 0 0 0;
 }
 .navbar-left a {
   color: #fff;
@@ -736,7 +786,6 @@ h5 + #drop,
 #droppp,
 #dropppp {
   display: none;
-  /* z-index: 4; */
   position: absolute;
 }
 
@@ -778,7 +827,7 @@ h5 + #drop > li > a,
 }
 * {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 li {
   list-style-type: none;

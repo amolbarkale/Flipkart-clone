@@ -583,11 +583,18 @@ function cartnos() {
         redd.style.display = "block";
     document.querySelector("#redd").textContent = itemsinCart.length;
   }
-  else {
-    redd.style.display = "none"
-  }
+ 
   console.log("triggered")
 }
+
+let itemsinCart = JSON.parse(localStorage.getItem("productsInCart"))
+if (itemsinCart.length != 0) {
+     console.log("triggered1")
+        redd.style.display = "block";
+    document.querySelector("#redd").textContent = itemsinCart.length;
+  }
+
+
 
 function totalcost(itm) {
  
@@ -642,11 +649,9 @@ function showcart() {
   }
 
   let empty = document.getElementsByClassName("fa-shopping-cart")[0];
-  let red = document.getElementById("redd");
 
   empty.addEventListener("click", function () {
-    if ((red.style.display = "none")) {
-      console.log('red:', red)
+    if ((redd.style.display = "none")) {
       window.location.href = "empty_cart.html";
     }
   });

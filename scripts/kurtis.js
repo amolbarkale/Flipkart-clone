@@ -89,7 +89,7 @@ let allKurtis = [
 localStorage.setItem("kurtis", JSON.stringify(allKurtis));
 
 function goKurtisPage() {
-  window.location.href = "kurtis.html";
+  window.location.href = "index.html";
 }
 
 function kurtiproduct() {

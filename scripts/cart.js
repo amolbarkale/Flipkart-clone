@@ -24,7 +24,7 @@ function showmenu() {
 function cartnos() {
   let itemsinCart = JSON.parse(localStorage.getItem("productsInCart"))
 
-  if (itemsinCart.length != 0) {
+  if (itemsinCart != null) {
         redd.style.display = "block";
     document.querySelector("#redd").textContent = itemsinCart.length;
   }
@@ -37,7 +37,7 @@ function totalcost() {
   let cartcost = parseInt(localStorage.getItem("totalcost"));
   let itemsinCart = JSON.parse(localStorage.getItem("productsInCart"))
 
-  if (itemsinCart.length == 0) {
+  if (itemsinCart == null) {
     localStorage.setItem("totalcost", 0)
   }
   else {
@@ -45,6 +45,7 @@ function totalcost() {
 
     for (let j = 0; j < itemsinCart.length; j++) {
       total += Number(itemsinCart[j].index*itemsinCart[j].price);
+      console.log('total:', total)
     }
     localStorage.setItem("totalcost", total)
   }

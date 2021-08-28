@@ -151,12 +151,19 @@
   border-bottom: 1px solid blue;
   margin-left: 40px;
 }
+.focusOn:hover {
+  background-color: rgb(40, 116, 240);
+}
+.focusOn:hover > a {
+  color: white !important;
+}
+
 #inputcontroll1 {
   padding: 8px 10px 10px 0;
   width: 80%;
   color: #000;
   font-size: inherit;
-  background: #fff;
+  background-color: #fff;
   border: none;
   border-bottom: 1px solid blue;
   margin-left: 40px;
@@ -808,7 +815,7 @@ h5 + #drop > li > a,
   background-color: white;
   box-shadow: 0 0 5px #ccc;
   box-sizing: border-box;
-  padding: 0 5px;
+  padding: 0px;
   text-align: center;
   margin-left: -10px;
   z-index: 101;

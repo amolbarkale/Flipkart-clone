@@ -576,10 +576,11 @@ function setitems(prod) {
   
 
 function cartnos() {
+  let redd = document.getElementById("redd");
   let productnos = localStorage.getItem("cartnos")
   let itemsinCart = JSON.parse(localStorage.getItem("productsInCart"))
 
-  if (itemsinCart.length != 0) {
+  if (itemsinCart != null) {
         redd.style.display = "block";
     document.querySelector("#redd").textContent = itemsinCart.length;
   }
@@ -588,7 +589,8 @@ function cartnos() {
 }
 
 let itemsinCart = JSON.parse(localStorage.getItem("productsInCart"))
-if (itemsinCart.length != 0) {
+
+if (itemsinCart != null) {
      console.log("triggered1")
         redd.style.display = "block";
     document.querySelector("#redd").textContent = itemsinCart.length;
@@ -608,6 +610,7 @@ function totalcost(itm) {
   }
   
 }
+
 
 
 function displaycart() {
@@ -648,10 +651,12 @@ function showcart() {
     window.location.href = "cart.html";
   }
 
-  let empty = document.getElementsByClassName("fa-shopping-cart")[0];
-
+let empty = document.getElementsByClassName("fa-shopping-cart")[0];
+  
   empty.addEventListener("click", function () {
+  
     if ((redd.style.display = "none")) {
+      console.log('showcart3');
       window.location.href = "empty_cart.html";
     }
   });

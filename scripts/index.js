@@ -600,11 +600,13 @@ if (itemsinCart != null) {
 
 function totalcost(itm) {
  
+  if (itm == undefined) {  window.location.reload()}
  let cartcost = localStorage.getItem("totalcost")
 
   if (cartcost != null) {
      cartcost = parseInt(cartcost);
     localStorage.setItem("totalcost", cartcost + itm.price);
+    
   } else {
     localStorage.setItem("totalcost", itm.price);
   }

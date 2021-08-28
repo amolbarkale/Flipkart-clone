@@ -125,7 +125,8 @@ let amol = document.getElementById("redd");
 amol.addEventListener("onclick", displaycart());
 
 
-  function removit(pid) {
+function removit(pid) {
+   
   let updatedCart = [];
    let prod = JSON.parse(localStorage.getItem("productsInCart"));
     for (var k in prod) {
@@ -140,7 +141,8 @@ amol.addEventListener("onclick", displaycart());
 
     totalcost();
     displaycart();
-    cartnos()
+  cartnos();
+  window.location.reload();
   }
 
 function goindex() {
